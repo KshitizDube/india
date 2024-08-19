@@ -31,12 +31,20 @@
       color: blue;
     }
 
-    .table{
+    .table {
       padding: 10px;
       font-size: 25px;
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    .hotels{
+    .table thead th{
+      background-color: aqua;
+      padding: 10px;
+      color: darkgreen;
+    }
+
+    .table tbody td{
       padding: 10px;
     }
 
@@ -51,66 +59,75 @@
 </head>
 
 <body>
+  <header>
+    <h1>
+      Hotels
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a>|</li>
+        <li><a href="hotel.html">Hotels</a>|</li>
+        <li><a href="food.html">Food</a>|</li>
+        <li><a href="contact.html">Contact Us</a>|</li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <header>
-      <h1>
-        Hotels
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a>|</li>
-          <li><a href="hotel.html">Hotels</a>|</li>
-          <li><a href="food.html">Food</a>|</li>
-          <li><a href="contact.html">Contact Us</a>|</li>
-        </ul>
-      </nav>
-    </header>
     <section>
       <table class="table">
-        <tr class="tableheading">
+        <thead>
+        <tr>
           <th>Hotels</th>
           <th>Description</th>
           <th>Price</th>
           <th>Distance From City Attraction</th>
         </tr>
-        <tr class="hotels">
-          <td> Hotel Grand Sabarees<img src="hotelgrand.jpg"></td>
-          <td> A nice comfortable stay with clean rooms and in a good location. Hotel Grand Sabarees is conveniently
-            located with close proximity to the Railway station, good vegetarian restaurants and Meenakshi temple. The
-            rooms are very well maintained and clean. The pricing is very reasonable.
-          </td>
-          <td>₹2500.00</td>
-          <td>The hotel is 1.1 km form Meenakshi Amman Temple</td>
-        </tr>
-        <tr class="hotels">
-          <td> Hotel Taj Palace<img src="Tajpalace.jpg"></td>
-          <td>
-            Spread over six acres of lush gardens, the iconic Taj Palace, New Delhi holds a prominent place in the
-            capital's prestigious Diplomatic Enclave. Synonymous with timeless luxury and unmatched hospitality, the
-            hotel offers modern facilities seamlessly infused with epitomizing elements of exquisite Indian art.
-          </td>
-          <td>₹310.35</td>
-          <td>This hotel is 14.7 km from red fort (Delhi)</td>
-        </tr>
-        <tr class="hotels">
-          <td> Hotel Taj Mahal<img src="tajmahal.jpg"></td>
-          <td>The Taj Mahal Palace is a heritage, five-star, luxury hotel in the Colaba area of Mumbai, Maharashtra,
-            India, situated next to the Gateway of India. Built in the Indo-Saracenic style, it opened in 1903 as the
-            Taj Mahal Hotel and has historically often been known simply as "The Taj".
-          </td>
-          <td>₹ 14,868</td>
-          <td>This place is 400.0 m from Gateway Of India(Mumbai)</td>
-        </tr>
-        <tr class="hotels">
-          <td> Hotel Star Bodh Gaya<img src="Bodhgaya.jpg"></td>
-          <td>
-            Hotel Star Bodh Gaya offers a range of spacious and well-appointed rooms to cater to the needs of every
-            traveler. Choose from their Deluxe Double or Twin rooms, spanning an impressive 400 square meters and
-            featuring either a plush King Bed or a cozy Single Bed.
-          </td>
-          <td>₹ 2500</td>
-          <td>This place is 1.8 km from Bodh Gaya</td>
-        </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td><img src="hotelgrand.jpg"><h3>Hotel Grand Sabarees</h3></td>
+            <td> A nice comfortable stay with clean rooms and in a good location. Hotel Grand Sabarees is conveniently
+              located with close proximity to the Railway station, good vegetarian restaurants and Meenakshi temple. The
+              rooms are very well maintained and clean. The pricing is very reasonable.
+            </td>
+            <td>₹2500.00</td>
+            <td>The hotel is 1.1 km form Meenakshi Amman Temple</td>
+          </tr>
+          <tr>
+            <td><img src="Tajpalace.jpg"><h3>Hotel Taj Palace</h3></td>
+            <td>
+              Spread over six acres of lush gardens, the iconic Taj Palace, New Delhi holds a prominent place in the
+              capital's prestigious Diplomatic Enclave. Synonymous with timeless luxury and unmatched hospitality, the
+              hotel offers modern facilities seamlessly infused with epitomizing elements of exquisite Indian art.
+            </td>
+            <td>₹310.35</td>
+            <td>This hotel is 14.7 km from red fort (Delhi)</td>
+          </tr>
+          <tr>
+            <td><img src="tajmahal.jpg"><h3>Hotel Taj Mahal></h3></td>
+            <td>The Taj Mahal Palace is a heritage, five-star, luxury hotel in the Colaba area of Mumbai, Maharashtra,
+              India, situated next to the Gateway of India. Built in the Indo-Saracenic style, it opened in 1903 as the
+              Taj Mahal Hotel and has historically often been known simply as "The Taj".
+            </td>
+            <td>₹ 14,868</td>
+            <td>This place is 400.0 m from Gateway Of India(Mumbai)</td>
+          </tr>
+          <tr>
+            <td><img src="Bodhgaya.jpg"><h3>Hotel Star Bodh Gaya</h3></td>
+            <td>
+              Hotel Star Bodh Gaya offers a range of spacious and well-appointed rooms to cater to the needs of every
+              traveler. Choose from their Deluxe Double or Twin rooms, spanning an impressive 400 square meters and
+              featuring either a plush King Bed or a cozy Single Bed.
+            </td>
+            <td>₹ 2500</td>
+            <td>This place is 1.8 km from Bodh Gaya</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"> Have a happy stay in India 😊</td>
+          </tr>
+        </tfoot>
       </table>
     </section>
   </main>
