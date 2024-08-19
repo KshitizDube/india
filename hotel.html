@@ -32,6 +32,7 @@
     }
 
     .table {
+      background-color: rgb(212, 246, 198);
       padding: 10px;
       font-size: 25px;
       width: 100%;
@@ -52,6 +53,14 @@
       padding: 10px;
       background-color: aqua;
       text-align: center;
+    }
+
+    .table tbody tr:nth-child(even){
+      background-color: pink;
+    }
+
+    .table tbody tr:hover{
+      background-color: powderblue;
     }
 
     footer {
@@ -80,7 +89,7 @@
   </header>
   <main>
     <section>
-      <table class="table">
+      <table class="table" border="1">
         <thead>
         <tr>
           <th>Hotels</th>
@@ -110,7 +119,7 @@
             <td>This hotel is 14.7 km from red fort (Delhi)</td>
           </tr>
           <tr>
-            <td><img src="tajmahal.jpg"><h3>Hotel Taj Mahal></h3></td>
+            <td><img src="tajmahal.jpg"><h3>Hotel Taj Mahal</h3></td>
             <td>The Taj Mahal Palace is a heritage, five-star, luxury hotel in the Colaba area of Mumbai, Maharashtra,
               India, situated next to the Gateway of India. Built in the Indo-Saracenic style, it opened in 1903 as the
               Taj Mahal Hotel and has historically often been known simply as "The Taj".
