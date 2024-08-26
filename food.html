@@ -22,6 +22,27 @@
       text-align: center;
     }
 
+    #foods{
+      text-align: center;
+      text-shadow: 10px 10px mediumseagreen;
+    }
+
+    .food-style{
+      text-align: center;
+    }
+
+    .food-style img{
+      width: 200px;
+      height: 150px;
+      transition: width height transform 2s linear;
+    }
+
+    .food-style img:hover{
+      width: 400px;
+      height: 300px;
+      transform: rotate(-10deg);
+    }
+
     footer {
       background-color: palegreen;
       width: 100%;
@@ -33,7 +54,17 @@
 </head>
 
 <body>
-
+<main>
+  <h2 id="foods"> Must try foods in India </h2>
+  <div class="food-style">
+    <img src="chole.jpg">
+    <h3> Chole Bhature</h3>
+    <img src="dosa.jpg">
+    <h3> Dosa </h3>
+    <img src="pavbhaji.jpg">
+    <h3> Pav Bhaji</h3>
+  </div>
+</main>
 </body>
 <main>
     <header>
