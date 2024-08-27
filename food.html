@@ -44,6 +44,21 @@
       transform: rotate(-10deg);
     }
 
+    #overlap{
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    #overlap img{
+      position: absolute;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #overlap img.child:hover{
+      opacity: 0;
+    }
+
     footer {
       background-color: palegreen;
       width: 100%;
@@ -83,6 +98,10 @@
       <h3> Dosa </h3>
       <img src="pavbhaji.jpg">
       <h3> Pav Bhaji</h3>
+    </div>
+    <div id="overlap">
+      <img src="rajma.jpg" width="200" height="200" class="parent">
+      <img class="child" src="rice.jpg" width="200" height="200">
     </div>
   </main>
 </body>
