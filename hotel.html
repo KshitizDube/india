@@ -5,18 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    nav ul li a {
-      text-decoration: none;
-    }
-
-    li {
+    nav ul li {
       list-style-type: none;
       display: inline-block;
-      text-align: center;
-      padding: 20px;
       font-weight: bold;
       font-size: 25px;
       color: lightseagreen;
+      padding: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      position: relative;
+      margin: 20px;
+    }
+
+    nav a:hover {
+      background-color: rgb(162, 255, 0);
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      background-color: rgb(4, 0, 245);
+      transition: width ease-in-out 200ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
     }
 
 
@@ -39,27 +60,27 @@
       border-collapse: collapse;
     }
 
-    .table thead th{
+    .table thead th {
       background-color: aqua;
       padding: 10px;
       color: darkgreen;
     }
 
-    .table tbody td{
+    .table tbody td {
       padding: 10px;
     }
 
-    .table tfoot tr td{
+    .table tfoot tr td {
       padding: 10px;
       background-color: aqua;
       text-align: center;
     }
 
-    .table tbody tr:nth-child(even){
+    .table tbody tr:nth-child(even) {
       background-color: pink;
     }
 
-    .table tbody tr:hover{
+    .table tbody tr:hover {
       background-color: powderblue;
     }
 
@@ -92,16 +113,18 @@
     <section>
       <table class="table" border="1">
         <thead>
-        <tr>
-          <th>Hotels</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Distance From City Attraction</th>
-        </tr>
+          <tr>
+            <th>Hotels</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Distance From City Attraction</th>
+          </tr>
         </thead>
         <tbody>
-          <tr >
-            <td><img src="hotelgrand.jpg"><h3>Hotel Grand Sabarees</h3></td>
+          <tr>
+            <td><img src="hotelgrand.jpg">
+              <h3>Hotel Grand Sabarees</h3>
+            </td>
             <td> A nice comfortable stay with clean rooms and in a good location. Hotel Grand Sabarees is conveniently
               located with close proximity to the Railway station, good vegetarian restaurants and Meenakshi temple. The
               rooms are very well maintained and clean. The pricing is very reasonable.
@@ -110,7 +133,9 @@
             <td>The hotel is 1.1 km form Meenakshi Amman Temple</td>
           </tr>
           <tr>
-            <td><img src="Tajpalace.jpg"><h3>Hotel Taj Palace</h3></td>
+            <td><img src="Tajpalace.jpg">
+              <h3>Hotel Taj Palace</h3>
+            </td>
             <td>
               Spread over six acres of lush gardens, the iconic Taj Palace, New Delhi holds a prominent place in the
               capital's prestigious Diplomatic Enclave. Synonymous with timeless luxury and unmatched hospitality, the
@@ -120,7 +145,9 @@
             <td>This hotel is 14.7 km from red fort (Delhi)</td>
           </tr>
           <tr>
-            <td><img src="tajmahal.jpg"><h3>Hotel Taj Mahal</h3></td>
+            <td><img src="tajmahal.jpg">
+              <h3>Hotel Taj Mahal</h3>
+            </td>
             <td>The Taj Mahal Palace is a heritage, five-star, luxury hotel in the Colaba area of Mumbai, Maharashtra,
               India, situated next to the Gateway of India. Built in the Indo-Saracenic style, it opened in 1903 as the
               Taj Mahal Hotel and has historically often been known simply as "The Taj".
@@ -129,7 +156,9 @@
             <td>This place is 400.0 m from Gateway Of India(Mumbai)</td>
           </tr>
           <tr>
-            <td><img src="Bodhgaya.jpg"><h3>Hotel Star Bodh Gaya</h3></td>
+            <td><img src="Bodhgaya.jpg">
+              <h3>Hotel Star Bodh Gaya</h3>
+            </td>
             <td>
               Hotel Star Bodh Gaya offers a range of spacious and well-appointed rooms to cater to the needs of every
               traveler. Choose from their Deluxe Double or Twin rooms, spanning an impressive 400 square meters and
