@@ -41,15 +41,9 @@
       height: 50px;
     }
 
-    nav{
-      float: left;
-    }
-
-    li {
+    nav ul li {
       list-style-type: none;
       display: inline-block;
-      text-align: center;
-      padding: 20px;
       font-weight: bold;
       font-size: 25px;
       color: lightseagreen;
@@ -58,14 +52,22 @@
     nav ul li a {
       text-decoration: none;
       position: relative;
-    }
-
-    nav ul li a:hover{
-      
+      margin: 20px;
     }
 
     nav a::before{
-      
+      content:'';
+      display:block;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      transition: all ease-in-out 200ms;
+    }
+
+    nav a:hover::before{
+      width: 100%;
     }
 
     img {
