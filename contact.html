@@ -2,8 +2,41 @@
 <html>
 
 <head>
-  <script></script>
+  <script>
+    function valiadate(){
+      var name1=document.getElementById("name").value;
+      var phone1=document.getElementById("phone").value;
+      var email=document.getElementById("email").value;
+      var message=document.getElementById("message").value;
 
+      if(name1.lenght<5){
+        text="Please enter full name";
+        msg.innerHTML=text;
+        return false;
+      }
+
+      if(isNaN(phone1)|| phone1.lenght!=10){
+        text="Please enter a valid phone number!";
+        msg.innerHTML=text;
+        return false;
+      }
+
+      if(email1.indexOf("@")==-1 || email.lenght<6){
+        text="Please entera valid email";
+        msg.innerHTML=text;
+        return false;
+      }
+
+      if(message1.lenght<=5){
+        text="Please enter more than five charaters";
+        msg.innerHTML=text;
+        return false;
+      }
+
+      alert("Form Submitted Succesfully");
+      return true;
+    }
+  </script>
   <style>
     nav ul li {
       list-style-type: none;
@@ -62,6 +95,7 @@
 </body>
 <main>
   <header>
+    <h1>India</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a>|</li>
