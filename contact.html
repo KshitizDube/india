@@ -18,20 +18,17 @@
       }
 
       if (isNaN(phone1) || phone1.lenght != 10) {
-        text = "Please enter a valid phone number!";
-        msg.innerHTML = text;
+        alert("Please enter a valid phone number!");
         return false;
       }
 
       if (email1.indexOf("@") == -1 || email.lenght < 6) {
-        text = "Please entera valid email";
-        msg.innerHTML = text;
+        alert("Please entera valid email");
         return false;
       }
 
       if (message1.lenght <= 5) {
-        text = "Please enter more than five charaters";
-        msg.innerHTML = text;
+        alert("Please enter more than five charaters");
         return false;
       }
 
