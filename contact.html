@@ -8,26 +8,25 @@
     function validate() {
       var name1 = document.getElementById("name").value;
       var phone1 = document.getElementById("phone").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-      var msg = document.getElementById("msg");
+      var email1 = document.getElementById("email").value;
+      var message1 = document.getElementById("message").value;
 
-      if (name1.lenght < 5) {
+      if (name1.length < 5) {
         alert("Please enter full name");
         return false;
       }
 
-      if (isNaN(phone1) || phone1.lenght != 10) {
+      if (isNaN(phone1) || phone1.length != 10) {
         alert("Please enter a valid phone number!");
         return false;
       }
 
-      if (email1.indexOf("@") == -1 || email.lenght < 6) {
+      if (email1.indexOf("@") == -1 || email1.length < 6) {
         alert("Please entera valid email");
         return false;
       }
 
-      if (message1.lenght <= 5) {
+      if (message1.length <= 5) {
         alert("Please enter more than five charaters");
         return false;
       }
@@ -163,7 +162,7 @@
           <input type="text" placeholder="Email" id="email">
         </div>
         <div class="input_field">
-          <textarea placeholder="Message" id="massage"></textarea>
+          <textarea placeholder="Message" id="message"></textarea>
         </div>
         <div class="btn">
           <input type="submit" onclick="validate()">
