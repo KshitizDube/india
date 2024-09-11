@@ -12,22 +12,22 @@
       var message1 = document.getElementById("message").value;
 
       if (name1.length < 5) {
-        alert("Please enter full name");
+        alert("Please enter full name >= 5 characters");
         return false;
       }
 
       if (isNaN(phone1) || phone1.length != 10) {
-        alert("Please enter a valid phone number!");
+        alert("Please enter a valid phone number! Should be 10 digits.");
         return false;
       }
 
       if (email1.indexOf("@") == -1 || email1.length < 6) {
-        alert("Please entera valid email");
+        alert("Please enter a valid email");
         return false;
       }
 
       if (message1.length <= 5) {
-        alert("Please enter more than five charaters");
+        alert("Message should be atleast six charaters long");
         return false;
       }
 
@@ -165,7 +165,7 @@
           <textarea placeholder="Message" id="message"></textarea>
         </div>
         <div class="btn">
-          <input type="submit" onclick="validate()">
+          <input type="submit">
         </div>
         <div id="msg">
 
